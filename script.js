@@ -127,7 +127,7 @@ function displayProjects() {
                 alt="${project.title}"
                 class="w-full aspect-video object-cover"
               />
-              <div class="p-6">
+              <div class="p-6 font-Ovo">
                 <h3 class="font-semibold text-xl mb-2 dark:text-white">${project.title}</h3>
                 <p class="text-gray-600 dark:text-white/80 mb-4">${project.description}</p>
                 <div class="flex items-center gap-4 mt-5">
