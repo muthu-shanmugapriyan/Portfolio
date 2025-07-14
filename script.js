@@ -119,7 +119,9 @@ function displayProjects() {
   projects.forEach((project) => {
     const projectCard = `
           <div class="w-full flex-shrink-0 snap-center p-4">
-            <div class="group bg-white dark:bg-darkHover rounded-lg shadow-lg overflow-hidden transition-transform duration-300 ease-in-out hover:-translate-y-2">
+          <div class="group rounded-lg shadow-lg overflow-hidden transition-transform duration-300 ease-in-out hover:-translate-y-2" 
+     style="background-color: #2a004a4d;">
+
               <img
                 src="${project.image}"
                 alt="${project.title}"
@@ -132,6 +134,7 @@ function displayProjects() {
                   <a
                     href="${project.link}"
                     target="_blank"
+                    
                     class="inline-block bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white px-6 py-2 rounded-full font-semibold transition-all duration-300 ease-in-out group-hover:scale-105 shadow-md hover:shadow-lg hover:shadow-fuchsia-400/50"
                   >
                     Visit Site
