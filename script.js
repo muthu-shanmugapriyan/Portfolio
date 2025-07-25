@@ -119,8 +119,7 @@ function displayProjects() {
   projects.forEach((project) => {
     const projectCard = `
           <div class="w-full flex-shrink-0 snap-center p-4">
-          <div class="group rounded-lg shadow-lg overflow-hidden transition-transform duration-300 ease-in-out hover:-translate-y-2" 
-     style="background-color: #2a004a4d;">
+          <div class="group rounded-lg shadow-lg overflow-hidden transition-transform duration-300 ease-in-out hover:-translate-y-2 bg-[#fcf4ff] dark:bg-[#2a004a]/30">
 
               <img
                 src="${project.image}"
@@ -129,7 +128,7 @@ function displayProjects() {
               />
               <div class="p-6 font-Ovo">
                 <h3 class="font-semibold text-xl mb-2 dark:text-white">${project.title}</h3>
-                <p class="text-gray-600 dark:text-white/80 mb-4">${project.description}</p>
+                <p class="text-black dark:text-white/80 mb-4">${project.description}</p>
                 <div class="flex items-center gap-4 mt-5">
                   <a
                     href="${project.link}"
